@@ -1,0 +1,17 @@
+{{#if session.isAuthenticated}}
+  <h2 id="title">Welcome to My EmberJS-Rails4 App</h2>
+
+  <ul>
+    <li>{{link-to 'Home' 'index'}}</li>
+    <li>{{link-to 'Users' 'users'}}</li>
+  </ul>
+
+<hr>
+  <button {{ action 'invalidateSession' }}>Logout</button>
+{{else}}
+  {{#link-to 'login'}}Login{{/link-to}}
+{{/if}}
+<hr>
+
+{{outlet}}
+
