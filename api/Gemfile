@@ -78,3 +78,6 @@ group :development, :test do
   gem "shoulda-matchers"
   gem "spring-commands-rspec"
 end
+
+# Utility gems
+gem 'awesome_print'
